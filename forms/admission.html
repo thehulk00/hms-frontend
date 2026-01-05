@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admission</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<body class="page-patient">
+<div class="container">
+  <h2>In-Patient Admission</h2>
+
+  <form action="../backend/admission_add.php" method="POST">
+    <div class="input-group">
+      <label>Patient ID</label>
+      <input type="number" name="patient_id" required>
+    </div>
+
+    <div class="input-group">
+      <label>Room Number</label>
+      <input type="text" name="room_no" required>
+    </div>
+
+    <div class="input-group">
+      <label>Admission Date</label>
+      <input type="date" name="admission_date" required>
+    </div>
+
+    <button type="submit">Admit Patient</button>
+  </form>
+
+  <div class="back"><a href="../index.html">← Back</a></div>
+</div>
+
+</body>
+</html>

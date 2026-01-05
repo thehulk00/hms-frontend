@@ -1,0 +1,99 @@
+* { box-sizing: border-box; font-family: system-ui; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container, .card {
+  background: #fff;
+  width: 420px;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.2);
+}
+
+h2 { text-align: center; margin-bottom: 20px; color:#1e3a8a; }
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover { background:#1e40af; }
+
+a { display:block; text-align:center; margin-top:10px; color:#2563eb; text-decoration:none; }
+/* Patient */
+.page-patient {
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+}
+
+/* Doctor */
+.page-doctor {
+  background: linear-gradient(135deg, #ecfeff, #cffafe);
+}
+
+/* Staff */
+.page-staff {
+  background: linear-gradient(135deg, #fefce8, #fef9c3);
+}
+
+/* Department */
+.page-department {
+  background: linear-gradient(135deg, #f5f3ff, #ede9fe);
+}
+
+/* Appointment */
+.page-appointment {
+  background: linear-gradient(135deg, #fff7ed, #ffedd5);
+}
+
+/* OPD */
+.page-opd {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+}
+
+/* Admission (IPD) */
+.page-admission {
+  background: linear-gradient(135deg, #fafafa, #f1f5f9);
+}
+
+/* Prescription */
+.page-prescription {
+  background: linear-gradient(135deg, #fff1f2, #ffe4e6);
+}
+
+/* Lab */
+.page-lab {
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
+}
+
+/* Billing */
+.page-billing {
+  background: linear-gradient(135deg, #fffbeb, #fef3c7);
+}
+
+/* Discharge */
+.page-discharge {
+  background: linear-gradient(135deg, #f8fafc, #e5e7eb);
+}
+

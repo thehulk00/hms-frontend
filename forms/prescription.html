@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prescription</title>
+  <link rel="stylesheet" href="/hms/assets/css/style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>Prescription</h2>
+
+  <form action="../backend/prescription_add.php" method="POST">
+    <input type="number" name="patient_id" placeholder="Patient ID" required>
+    <textarea name="medicine" rows="4" placeholder="Medicines & Instructions" required></textarea>
+    <button type="submit">Save Prescription</button>
+  </form>
+</div>
+
+</body>
+</html>

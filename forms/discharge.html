@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Discharge</title>
+  <link rel="stylesheet" href="/hms/assets/css/style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>Discharge Summary</h2>
+
+  <form action="../backend/discharge_add.php" method="POST">
+    <input type="number" name="admission_id" placeholder="Admission ID" required>
+
+    <textarea name="notes" rows="4" placeholder="Discharge Notes"></textarea>
+
+    <input type="date" name="discharge_date" required>
+
+    <button type="submit">Discharge Patient</button>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OPD Visit</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>OPD Visit</h2>
+
+  <form action="../backend/opd_add.php" method="POST">
+
+  <label>Patient ID</label>
+  <input type="number" name="patient_id" required>
+
+  <label>Visit Date</label>
+  <input type="date" name="visit_date" required>
+
+  <label>Notes</label>
+  <textarea name="notes" rows="3"></textarea>
+
+  <button type="submit">Save OPD Visit</button>
+</form>
+
+
+  <div class="back"><a href="../index.html">← Back</a></div>
+</div>
+
+</body>
+</html>

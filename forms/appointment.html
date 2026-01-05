@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Appointment Booking</title>
+ <link rel="stylesheet" href="../assets/css/style.css"> 
+</head>
+<body>
+<body class="page-appointment">
+<div class="container">
+  <h2>Appointment Booking</h2>
+
+  <form action="../backend/appointment_add.php" method="POST">
+
+    <div class="input-group">
+      <label>Patient ID</label>
+      <input type="number" name="patient_id" required>
+    </div>
+
+    <div class="input-group">
+      <label>Doctor ID</label>
+      <input type="number" name="doctor_id" required>
+    </div>
+
+    <div class="input-group">
+      <label>Appointment Date</label>
+      <input type="date" name="appointment_date" required>
+    </div>
+
+        <div class="input-group">
+      <label>Reason</label>
+      <textarea name="reason" rows="4" placeholder="Reason for appointment" required></textarea>
+    </div>
+
+    <button type="submit">Book Appointment</button>
+  </form>
+</div>
+
+</body>
+</html>

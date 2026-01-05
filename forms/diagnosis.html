@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diagnosis</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Diagnosis & Prescription</h2>
+
+  <form action="../backend/diagnosis_add.php" method="POST">
+    <div class="input-group">
+      <label>Patient ID</label>
+      <input type="number" name="patient_id" required>
+    </div>
+
+    <div class="input-group">
+      <label>Prescription</label>
+      <textarea name="prescription"></textarea>
+    </div>
+
+    <button type="submit">Save Diagnosis</button>
+  </form>
+
+  <div class="back"><a href="../index.html">← Back</a></div>
+</div>
+
+</body>
+</html>

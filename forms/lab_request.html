@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lab Test Request</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Lab Test Request</h2>
+
+  <form action="../backend/lab_request_add.php" method="POST">
+    <div class="input-group">
+      <label>Patient ID</label>
+      <input type="number" name="patient_id" required>
+    </div>
+
+    <div class="input-group">
+      <label>Test Name</label>
+      <input type="text" name="test_name" required>
+    </div>
+
+    <button type="submit">Request Test</button>
+  </form>
+
+  <div class="back"><a href="../index.html">← Back</a></div>
+</div>
+
+</body>
+</html>
