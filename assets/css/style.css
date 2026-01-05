@@ -1,99 +1,94 @@
-* { box-sizing: border-box; font-family: system-ui; }
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: "Segoe UI", system-ui, sans-serif;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: #1f4fd8;
+  color: #fff;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 14px;
+  background: #ffffff;
+  color: #1f4fd8;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn.primary {
+  background: #0d2ea8;
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  min-height: calc(100vh - 70px);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+  background: #ffffff;
 }
 
-
-.container, .card {
-  background: #fff;
-  width: 420px;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 20px 40px rgba(0,0,0,.2);
+.hero-text {
+  flex: 1;
 }
 
-h2 { text-align: center; margin-bottom: 20px; color:#1e3a8a; }
-
-input, textarea, select {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 14px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
-button {
-  width: 100%;
-  padding: 12px;
-  background: #2563eb;
-  border: none;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
+.hero-text p {
+  font-size: 18px;
+  color: #555;
 }
 
-button:hover { background:#1e40af; }
-
-a { display:block; text-align:center; margin-top:10px; color:#2563eb; text-decoration:none; }
-/* Patient */
-.page-patient {
-  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+.hero-image {
+  flex: 1;
+  text-align: center;
 }
 
-/* Doctor */
-.page-doctor {
-  background: linear-gradient(135deg, #ecfeff, #cffafe);
+.hero-image img {
+  max-width: 100%;
+  height: auto;
 }
 
-/* Staff */
-.page-staff {
-  background: linear-gradient(135deg, #fefce8, #fef9c3);
-}
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-/* Department */
-.page-department {
-  background: linear-gradient(135deg, #f5f3ff, #ede9fe);
-}
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
 
-/* Appointment */
-.page-appointment {
-  background: linear-gradient(135deg, #fff7ed, #ffedd5);
+  .hero-text h1 {
+    font-size: 26px;
+  }
 }
-
-/* OPD */
-.page-opd {
-  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
-}
-
-/* Admission (IPD) */
-.page-admission {
-  background: linear-gradient(135deg, #fafafa, #f1f5f9);
-}
-
-/* Prescription */
-.page-prescription {
-  background: linear-gradient(135deg, #fff1f2, #ffe4e6);
-}
-
-/* Lab */
-.page-lab {
-  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
-}
-
-/* Billing */
-.page-billing {
-  background: linear-gradient(135deg, #fffbeb, #fef3c7);
-}
-
-/* Discharge */
-.page-discharge {
-  background: linear-gradient(135deg, #f8fafc, #e5e7eb);
-}
-
